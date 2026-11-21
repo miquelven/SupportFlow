@@ -1,11 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import LayoutContainer from "@/components/layout/LayoutContainer";
 
 export default function Home() {
-  return (
-    <div className="container mx-auto text-lg text-red-600 font-bold">
-      <Button>contact</Button>
-      <Link href="/contact">contact</Link>
-    </div>
-  );
+  return <LayoutContainer>dashboard</LayoutContainer>;
 }
