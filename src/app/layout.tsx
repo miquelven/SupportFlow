@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 import { Roboto, Raleway } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import LayoutProvider from "@/components/layout/LayoutProvider";
 
-const ralewayHeading = Raleway({subsets:['latin'],variable:'--font-heading'});
+const ralewayHeading = Raleway({
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -17,8 +21,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={cn("h-full", "antialiased", robotoSans.variable, ralewayHeading.variable)}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html
+      lang="en"
+      className={cn(
+        "h-full",
+        "antialiased",
+        robotoSans.variable,
+        ralewayHeading.variable,
+      )}
+    >
+      <body className="min-h-full flex flex-col">
+        <LayoutProvider>{children}</LayoutProvider>
+      </body>
     </html>
   );
 }
