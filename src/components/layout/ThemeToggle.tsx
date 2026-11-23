@@ -39,12 +39,17 @@ export function ThemeToggle() {
   return (
     <Button
       variant="ghost"
-      size="icon-sm"
+      size="icon-lg"
+      className="fixed right-4 top-4 z-50 size-12"
       onClick={toggleTheme}
       aria-label={theme === "dark" ? "Ativar tema claro" : "Ativar tema escuro"}
       title={theme === "dark" ? "Tema claro" : "Tema escuro"}
     >
-      {theme === "dark" ? <Sun /> : <Moon />}
+      {theme === "dark" ? (
+        <Sun className="size-6" />
+      ) : (
+        <Moon className="size-6" />
+      )}
     </Button>
   );
 }
