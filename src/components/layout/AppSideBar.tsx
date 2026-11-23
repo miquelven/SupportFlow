@@ -36,7 +36,7 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarHeader className="border-b border-sidebar-border">
         <div className="flex items-center gap-2 px-1 py-1">
-          <div className="flex size-8 shrink-0 items-center justify-center rounded-xs[calc(var(--radius-sm)+2px)] bg-sidebar-primary text-sidebar-primary-foreground">
+          <div className="flex size-8 shrink-0 items-center justify-center rounded-xsxs[calc(var(--radius-sm)+2px)] bg-sidebar-primary text-sidebar-primary-foreground">
             <Headset className="size-4" />
           </div>
           <div className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden">
@@ -73,7 +73,7 @@ export function AppSidebar() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg">
-              <div className="flex size-8 shrink-0 items-center justify-center rounded-xsfull bg-sidebar-accent text-xs font-medium">
+              <div className="flex size-8 shrink-0 items-center justify-center rounded-xsxsfull bg-sidebar-accent text-xs font-medium">
                 US
               </div>
               <div className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden">
