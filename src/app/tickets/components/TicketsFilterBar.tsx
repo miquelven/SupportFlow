@@ -9,11 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  ticketCategories,
-  ticketPriorities,
-  ticketStatuses,
-} from "@/lib/data/mock-tickets";
+import { ticketPriorities, ticketStatuses } from "@/lib/data/mock-tickets";
 import type { TicketFilters } from "@/lib/types/ticket";
 
 interface TicketsFilterBarProps {

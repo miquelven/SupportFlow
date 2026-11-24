@@ -9,6 +9,7 @@ import TicketsPagination from "./components/TicketsPagination";
 import { mockTickets, mockTotalTickets } from "@/lib/data/mock-tickets";
 import type { Ticket, TicketFilters } from "@/lib/types/ticket";
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 const PAGE_SIZE = 6;
 
@@ -65,8 +66,10 @@ export default function Tickets() {
           </p>
         </div>
         <Button size="lg" className="h-11 px-6 text-base">
-          <Plus />
-          Novo chamado
+          <Link href="/tickets/newTicket" className="flex items-center gap-2">
+            <Plus />
+            Novo chamado
+          </Link>
         </Button>
       </div>
 
